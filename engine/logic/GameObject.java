@@ -5,7 +5,6 @@ import java.awt.Graphics2D;
 import java.awt.Rectangle;
 
 import engine.Game;
-import engine.analytics.Analytics;
 import engine.graphics.Renderable;
 import engine.graphics.Texture;
 
@@ -21,8 +20,6 @@ public class GameObject implements Tickable, Renderable {
     private boolean enabled;
     private boolean solid;
     private boolean visible;
-
-    private Rectangle boundingBox;
 
     public GameObject(float x, float y) {
         this.x = x;
@@ -91,13 +88,4 @@ public class GameObject implements Tickable, Renderable {
     public void setVisible(boolean visible){
         this.visible = visible;
     }
-
-    public void setBoundingBox(Rectangle boundingBox) {
-        this.boundingBox = boundingBox;
-    }
-    
-    public void setBoundingBox(int x, int y, int width, int height){
-        this.boundingBox = new Rectangle(x, y, width, height);
-    }
-
 }

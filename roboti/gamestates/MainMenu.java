@@ -9,7 +9,7 @@ import engine.gamestates.GameState;
 public class MainMenu implements GameState {
 
     public void init(Game game) {
-        
+        System.out.println("sandbox");
     }
 
     public void tick(Game game) {
@@ -17,12 +17,12 @@ public class MainMenu implements GameState {
     }
 
     public void render(Game game, Graphics2D graphics) {
-        graphics.setColor(Color.RED);
+        graphics.setColor(Color.GREEN);
         graphics.fillRect(0, 0, 33, 33);
     }
 
     public void deinit(Game game) {
-
+        
     }
     
 }
